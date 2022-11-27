@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="todo_list.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-title"><b>M</b>anaging <b>M</b>anagers</div>
+    </div>
+    <div class="todo-wrapper">
+      <select class="user-select" onchange="displayUser()">
+        <option value="">Pick a manager</option>
+      </select>
+      <div class="user-info user-profile-container" hidden>
+        <img class="user-info user-image" src="" alt="user-image" hidden />
+        <div class="user-info user-birthday" hidden>
+          <label>Birthday:</label>
+          <span></span>
+        </div>
+        <div class="user-info user-age" hidden>
+          <label>Age:</label>
+          <span></span>
+        </div>
+        <div class="user-info user-city" hidden>
+          <label>City:</label>
+          <span></span>
+        </div>
+        <div class="user-info user-country" hidden>
+          <label>Country:</label>
+          <span></span>
+        </div>
+        <div class="user-info user-profession" hidden>
+          <label>Profession:</label>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="user-info task-form-container" hidden></div>
+
+      <div class="task-list-container"></div>
+    </div>
+  </body>
+</html>
